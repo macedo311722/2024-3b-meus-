@@ -13,15 +13,69 @@
 }
 
 body{
-    background-color:var(--azu-escuro);
+    background-color:var(--laranja);
     color: var(--preto);
     font-family: var(--font-texto);
 }
 .conteudo-principal{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    
+}
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 36%px;
+}
+
+.titulo-principal span{
+    color: var(--rosa);
+
+}
+
+
+.botao{
+    font-family: var(--font-texto);
+    font-size: 18px;
+    background-color: var(--preto);
+    color: var(--laranja);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    border-bottom: 4px solid var(--azu-escuro);
+    border-left: 4px solid var(--azu-escuro);
+    border-right: 4px solid var(--azu-escuro);
+    border-top: none;
+}
+.botoes{
+    display: block;
+}
+
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 0 40px 40px;
+} 
+.ativo{
+    background-color: var(--preto);
+    border-bottom: 4px solid var(768px);
+}
+@media screen and (min-width:768px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0 ;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
