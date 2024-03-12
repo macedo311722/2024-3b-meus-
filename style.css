@@ -29,11 +29,11 @@ body{
 .titulo-principal{
     text-align: left;
     width: 100%;
-    font-size: 36%px;
+    font-size: 36px;
 }
 
 .titulo-principal span{
-    color: var(--rosa);
+    color: var(--preto);
 
 }
 
@@ -41,7 +41,7 @@ body{
 .botao{
     font-family: var(--font-texto);
     font-size: 18px;
-    background-color: var(--preto);
+    background-color: var(--rosa);
     color: var(--laranja);
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@ body{
     border-bottom: 4px solid var(--azu-escuro);
     border-left: 4px solid var(--azu-escuro);
     border-right: 4px solid var(--azu-escuro);
-    border-top: none;
+    border-top: 4px solid var(--azu-escuro);
 }
 .botoes{
     display: block;
@@ -66,14 +66,14 @@ body{
 } 
 .ativo{
     background-color: var(--preto);
-    border-bottom: 4px solid var(768px);
+    border-bottom: 4px solid var(--azu-escuro);
 }
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px){
     .botoes{
         display: flex;
     }
     .botao:first-child{
-        border-radius: 40px 0 0 0 ;
+        border-radius: 40px 0 0 0;
     }
     .botao:last-child{
         border-radius: 0 40px 0 0;
