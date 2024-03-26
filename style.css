@@ -4,16 +4,16 @@
 
 
 :root{
-    --azu-escuro: #140152;
+    --verde: #1ed436;
     --preto: #071108;
-    --laranja: #fb8b24;
-    --rosa: #ff0a54;
+    --roxo: #6c02f7cf;
+    --cinza: #1b1b1b;
     --font-texto: "PT Serif", serif;
     --fonte-titulo: "Francois One", sans-serif;
 }
 
 body{
-    background-color:var(--laranja);
+    background-color:var(--roxo);
     color: var(--preto);
     font-family: var(--font-texto);
 }
@@ -41,17 +41,17 @@ body{
 .botao{
     font-family: var(--font-texto);
     font-size: 18px;
-    background-color: var(--rosa);
-    color: var(--laranja);
+    background-color: var(--cinza);
+    color: var(--azul);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1em;
     width: 100%;
-    border-bottom: 4px solid var(--azu-escuro);
-    border-left: 4px solid var(--azu-escuro);
-    border-right: 4px solid var(--azu-escuro);
-    border-top: 4px solid var(--azu-escuro);
+    border-bottom: 4px solid var(--cinza);
+    border-left: 4px solid var(--cinza);
+    border-right: 4px solid var(--cinza);
+    border-top: 4px solid var(--cinza);
 }
 .botoes{
     display: block;
@@ -64,10 +64,23 @@ body{
 .botao:last-child{
     border-radius: 0 0 40px 40px;
 } 
-.ativo{
-    background-color: var(--preto);
-    border-bottom: 4px solid var(--azu-escuro);
+.botao.ativo{
+    background-color: var(--roxo);
+    border-bottom: 4px solid var(--cinza);
 }
+.abas-textos{
+    background-color: var(--verde);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo{
+    display: block;
+}
+.aba-conteudo{
+    display: none;
+}
+
 @media screen and (min-width: 768px){
     .botoes{
         display: flex;
