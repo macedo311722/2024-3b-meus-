@@ -4,10 +4,10 @@
 
 
 :root{
-    --verde: #1ed436;
-    --preto: #071108;
-    --roxo: #6c02f7cf;
-    --cinza: #1b1b1b;
+    --verde: #26ff00;
+    --preto: #000000;
+    --roxo: #5d00ffcf;
+    --cinza: #303030;
     --font-texto: "PT Serif", serif;
     --fonte-titulo: "Francois One", sans-serif;
 }
@@ -65,8 +65,8 @@ body{
     border-radius: 0 0 40px 40px;
 } 
 .botao.ativo{
-    background-color: var(--roxo);
-    border-bottom: 4px solid var(--cinza);
+    background-color: var(--verde);
+    border-bottom: 4px solid var(--verde);
 }
 .abas-textos{
     background-color: var(--verde);
