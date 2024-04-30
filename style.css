@@ -32,7 +32,7 @@ body{
     font-size: 36px;
 }
 
-.titulo-principal span{
+.conteudo-principal span{
     color: var(--preto);
 
 }
@@ -51,14 +51,14 @@ body{
     border-bottom: 4px solid var(--cinza);
     border-left: 4px solid var(--cinza);
     border-right: 4px solid var(--cinza);
-    border-top: 4px solid var(--cinza);
+    border-top: none;
 }
 .botoes{
     display: block;
 }
 
 .botao:first-child{
-    border-radius: 40px 40px 0 0;
+    border-radius: 40px 0 0 0;
 }
 
 .botao:last-child{
@@ -66,12 +66,13 @@ body{
 } 
 .botao.ativo{
     background-color: var(--verde);
-    border-bottom: 4px solid var(--verde);
+    border-bottom: var(--verde);
 }
 .abas-textos{
     background-color: var(--verde);
-    padding: 40px;
+    padding: 50px;
     border-radius: 0 0 40px 40px;
+    width: 74.8%;
 }
 
 .aba-conteudo.ativo{
@@ -88,6 +89,43 @@ body{
 
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var();
+    color: var(--cinza
+    );
+    text-transform: uppercase;
+}
+
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 65px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--preto);
+    font-size: 20px;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+    .botoes:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
 }
 
